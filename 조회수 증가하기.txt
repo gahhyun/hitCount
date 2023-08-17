@@ -1,0 +1,17 @@
+조회수 증가하기
+
+사용자가 
+
+리스트에서 상세보기 누를때마다
+조회수(hit_count) 1을 증가시킨다.
+
+/read 컨트롤러 수행시
+업데이트 서비스 추가
+
+update 임
+
+hit_count = hit_count+1
+where 아티클_넘버 = #{아티클_넘버}
+
+
+서비스 > dao > mapper.xml
