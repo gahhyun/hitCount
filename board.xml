@@ -7,7 +7,7 @@
     <mapper namespace="com.ottt.ottt.dao.board.boardMapper">
     	
     	<select id="selectList" parameterType="SearchItem" resultType="ArticleDTO">
-	  		SELECT article_no, article_title, article_create_dt, user_no
+	  		SELECT article_no, article_title, article_create_dt, user_no, hit_count
 			FROM tb_article
 			where article_index_no = '4' and
 			(article_title like concat('%', #{keyword}, '%')
